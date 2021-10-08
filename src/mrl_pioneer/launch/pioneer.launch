@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<launch>
+
+<master auto="start"/>
+
+<!--- run emergency stop node -->
+<node pkg="estop" type="estop" name="estop" output="screen"/>
+
+<!--- run robot's URDF model -->
+<include file="$(find p2os_urdf)/launch/pioneer3dx_urdf.launch"/>
+
+<!--- run robot's driver -->
+<node pkg="rosaria" type="RosAria" name="ROSARIA">
+	<remap from="ROSARIA/cmd_vel" to="cmd_vel"/>
+	<remap from="ROSARIA/pose" to="odom"/>
+	<remap from="ROSARIA/sonar" to="sonar"/>
+	<remap from="ROSARIA/motors_state" to="motors_state"/>
+	<remap from="ROSARIA/enable_motors" to="enable_motors"/>
+	<remap from="ROSARIA/disable_motors" to="disable_motors"/>
+	<param name="port" value="/dev/serial/by-id/usb-Prolific_Technology_Inc._USB-Serial_Controller_D-if00-port0" />
+<!--<param name="port" value="/dev/ttyUSB0" />-->
+</node>
+
+<!--- run robot's telemetry -->
+<!--<include file="$(find robot_telemetry)/launch/pioneer_robot_telemetry.launch"/>-->
+
+</launch>
+

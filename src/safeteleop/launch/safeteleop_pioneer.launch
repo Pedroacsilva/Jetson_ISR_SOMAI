@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+
+<!-- run wiimote node -->
+<node respawn="true" pkg="wiimote"  type="wiimote_node.py" name="wiimote" output="screen"/>
+
+<!-- run teleoperation node -->
+<node pkg="safeteleop" type="safeteleop" name="safeteleop" output="screen">
+  <param name="sc_linear" value="0.3" type="double"/>
+  <param name="sc_angular" value="0.7" type="double"/>
+  <param name="safe_dist_th" value="1.5" type="double"/>
+  <param name="crit_dist_th" value="0.5" type="double"/>
+  <param name="hfov" value="75.0" type="double"/>
+</node>
+
+</launch>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+<!-- run gmapping -->
+<include file="$(find run_gmapping)/launch/run_gmapping.launch"/>
+
+<!-- Run move_base -->
+<include file="$(find nav_pioneer)/params/pioneer_move.launch" />
+
+</launch>

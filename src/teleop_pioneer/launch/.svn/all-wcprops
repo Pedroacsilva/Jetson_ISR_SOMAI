@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/486/stacks/mrl_robots/trunk/mrl_robots_teleop/launch
+END
+stingbot_keyboard.launch
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/486/stacks/mrl_robots/trunk/mrl_robots_teleop/launch/stingbot_keyboard.launch
+END
+traxbot_wii_buttons.launch
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/486/stacks/mrl_robots/trunk/mrl_robots_teleop/launch/traxbot_wii_buttons.launch
+END
+stingbot_wii_buttons.launch
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/486/stacks/mrl_robots/trunk/mrl_robots_teleop/launch/stingbot_wii_buttons.launch
+END
+traxbot_keyboard.launch
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/486/stacks/mrl_robots/trunk/mrl_robots_teleop/launch/traxbot_keyboard.launch
+END

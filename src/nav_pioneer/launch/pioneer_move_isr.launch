@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+<!--- Run the map server and AMCL -->
+<include file="$(find nav_pioneer)/launch/pioneer_AMCL_isr.launch" />
+
+<!-- Run move_base -->
+<include file="$(find nav_pioneer)/params/pioneer_move.launch" />
+
+</launch>

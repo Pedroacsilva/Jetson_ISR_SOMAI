@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+
+<!--- run robot's driver -->
+<include file="$(find mrl_pioneer)/launch/pioneer.launch"/>
+
+<!-- run keyboard teleoperation node -->
+<include file="$(find teleop_pioneer)/launch/teleop_kbd.launch"/>
+
+</launch>
+

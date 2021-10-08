@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+
+<!--- run robot's driver -->
+<include file="$(find mrl_pioneer)/launch/pioneer.launch"/>
+
+<!-- run safe teleoperation using Wiimote -->
+<include file="$(find safeteleop)/launch/safeteleop_pioneer.launch"/>
+
+</launch>
+
